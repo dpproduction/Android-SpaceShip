@@ -28,3 +28,7 @@ proguard/
 
 .idea/
 .idea
+
+app/app.iml
+
+spaceship.iml

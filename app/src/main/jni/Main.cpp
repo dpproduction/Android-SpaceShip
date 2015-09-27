@@ -3,9 +3,10 @@
 //
 
 #include "EventLoop.hpp"
+#include "DroidBlaster.hpp"
 
 void android_main(android_app* pApplication){
     packt::EventLoop lEventLoop(pApplication);
-    lEventLoop.run();
-
+    dbs::DroidBlaster lDroidBlaster;
+    lEventLoop.run(&lDroidBlaster);
 }
